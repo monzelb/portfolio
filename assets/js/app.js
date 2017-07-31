@@ -1,10 +1,12 @@
 $( document ).ready(function() {
 
-  $(".menu-items").mouseover(function(){
-    $(this).next(".slidies").animate({right: "90px"}, 25)
+  $(".menu-div").mouseover(function(){
+    $(this).children(".menu-items").css({"background-color": "#748bb2", "color": "white"});
+    $(this).children(".slidies").animate({right: "90px"}, 25);
   })
-  $(".menu-items").mouseleave(function(){
-    $(this).next(".slidies").animate({right: "0px"}, 3)
+  $(".menu-div").mouseleave(function(){
+    $(this).children(".menu-items").css({"background-color": "white", "color": "#748bb2"});
+    $(this).children(".slidies").animate({right: "0px"}, 3)
   })
 
 });
