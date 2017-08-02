@@ -1,9 +1,6 @@
 body {
     font-family: "Lato", sans-serif;
     z-index:0;
-    /*background-image: url("../images/Brett-meditating.jpg");
-    background-size: 120% ;
-    ba*/
     height: 100%
     width: 100%;
 }
@@ -14,6 +11,53 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  transition:0.3s;
+}
+
+.header{
+  position:absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.webdev {
+  font-size:16px;
+  margin-left: 110px;
+}
+
+.my-name{
+  font-size: 80px;
+}
+.more{
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, 0);
+}
+
+.arrow{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); 
+  color:white !important; 
+  text-decoration:none !important;
+
+}
+
+.arrow:hover{
+  color:white;
+  text-decoration:none !important;
+}
+
+#about{
+  color:white;
+  text-decoration:none;
+}
+
+#about-section{
+  margin-top: -55px;
+  padding-top: 55px;
 }
 
 .sidenav {
@@ -142,10 +186,35 @@ body {
     margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-/*  .sidenav {padding-top: 100px;}
-*/  .sidenav a {font-size: 18px;}
+.bm{
+  position:absolute;
+  margin-left: 20px;
+  top:10px;
+  font-size: 25px;
 }
+
+@media screen and (max-height: 435px) {
+  .sidenav a {font-size: 18px;}
+  .intro{color:#337ab7;}
+  .more{display:none;}
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .my-name{font-size: 60px; }
+  .webdev{margin-left:55px;}
+}
+
+@media screen and (min-width: 495px) and (max-width: 749px) {
+  .my-name{font-size: 30px; margin-left:30px;}
+  .webdev{margin-left: 0px;}
+}
+
+@media screen and (max-width: 494px) {
+  .my-name{font-size: 20px; margin-left:18px;}
+  .webdev{margin-left: 0px; font-size:10px;}
+}
+
+
 
 @media screen and (max-height: 338px) {
   #connect-id{
@@ -156,12 +225,14 @@ body {
 nav {
 box-shadow: 0 1px 1px rgba(175, 170, 180, 0.2);
   border-radius:0 !important;
-  background-color: white
+  background-color: white;
+  height:55px;
 }
 
 #menu-button {
   float:right;
   margin-right:100px;
+  margin-top: 8px;
 }
 
 .menu-toggle{
@@ -192,7 +263,5 @@ box-shadow: 0 1px 1px rgba(175, 170, 180, 0.2);
 .icon-social{
   padding:0 0 20 22px;
     font-size: 20px;
-
-
 }
 

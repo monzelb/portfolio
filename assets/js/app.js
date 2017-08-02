@@ -26,8 +26,22 @@ $( document ).ready(function() {
       $("#social").animate({right: "0px"}, 300);
       $(this).children(".menu-items").css({"background-color": "white", "color": "#748bb2"});
     }
-
   })
+
+    $('.trigger').on('click',function (e) {
+      e.preventDefault();
+      console.log(this)
+      console.log(this.hash)
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+        });
+    });
 
   // $(".connect").mouseleave(function(event){
   //     event.stopPropagation()
