@@ -3,9 +3,18 @@ body {
     z-index:0;
     height: 100%
     width: 100%;
+    letter-spacing:1px;
 }
 
+#contents{
+  display:none;
+}
+/*.under-intro{
+  height:100vh;
+  z-index:-1;
+}*/
 .intro{
+  position:relative;
   height:100vh;
   background-image: url("../images/gg-bridge.jpg");
   background-position: bottom;
@@ -16,23 +25,24 @@ body {
 
 .header{
   position:absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
 .webdev {
   font-size:16px;
-  margin-left: 110px;
-}
+/*  margin-left: 110px;
+*/}
 
 .my-name{
   font-size: 80px;
 }
 .more{
+
   position: absolute;
   left: 50%;
-  bottom: 5%;
+  bottom: 10%;
   transform: translate(-50%, 0);
 }
 
@@ -50,7 +60,7 @@ body {
   text-decoration:none !important;
 }
 
-#about{
+#about-button{
   color:white;
   text-decoration:none;
 }
@@ -58,7 +68,76 @@ body {
 #about-section{
   margin-top: -55px;
   padding-top: 55px;
+  background-color:#333333;
+  height:230px;
+  color:white;
 }
+
+.basic-info{
+  margin-top: 50px;
+}
+
+.skills-header{
+ font-size:20px;
+ font-weight:lighter;
+ letter-spacing: 2px;
+ padding-top:25px;
+}
+
+.skills{
+  margin-top:15px;
+  text-decoration:none;
+
+}
+
+.br{
+  border-bottom: 2px solid #4f4f4f ;
+  padding:5px;
+   letter-spacing: 1px;
+
+}
+
+.info-box{
+  border-left: 2px solid #3d3d3d ;
+}
+
+.skills-box{
+  border-left: 2px solid rgba(79, 79, 79, .5) ;
+}
+
+.tech-box{
+  border-left: 2px solid rgba(61,61,61, 0.8) ;
+}
+
+.keyboard{
+  color:#4380db;
+}
+
+.code-left{
+  color:#e95950;
+}
+
+.id-card{
+  color:#44a33c;
+
+}
+
+.left-icons{
+  margin-top:10px;
+}
+
+#about-section2{
+  height:235px;
+  background-color:#3d3d3d;
+  color:white;
+}
+
+#about-section3{
+  height:235px;
+  background-color:#474747;
+  color:white;
+}
+
 
 .sidenav {
   position:relative;
@@ -132,7 +211,7 @@ body {
   background-color: #d88aa8;
 }
 
-.fb-button{
+.insta-button{
   background-color: #e95950 ;
 }
 
@@ -201,7 +280,6 @@ body {
 
 @media screen and (min-width: 750px) and (max-width: 1000px) {
   .my-name{font-size: 60px; }
-  .webdev{margin-left:55px;}
 }
 
 @media screen and (min-width: 495px) and (max-width: 749px) {
@@ -209,16 +287,26 @@ body {
   .webdev{margin-left: 0px;}
 }
 
-@media screen and (max-width: 494px) {
+@media screen and (max-width: 554px) {
   .my-name{font-size: 20px; margin-left:18px;}
   .webdev{margin-left: 0px; font-size:10px;}
 }
 
-
-
 @media screen and (max-height: 338px) {
   #connect-id{
     display:none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #about-section, #about-section2, #about-section3{
+    height:300px;
+  }
+  .id-card, .left-icons{
+    display:none;
+  }
+  p{
+    font-size:11px;
   }
 }
 

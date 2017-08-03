@@ -28,7 +28,7 @@ $( document ).ready(function() {
     }
   })
 
-    $('.trigger').on('click',function (e) {
+    $('a').on('click',function (e) {
       e.preventDefault();
       console.log(this)
       console.log(this.hash)
@@ -53,6 +53,16 @@ $( document ).ready(function() {
 
 
 });
+
+$(function() {
+    Pace.on("done", function(){
+        $("#contents").fadeIn(1000);
+        console.log("Sdf");
+    });
+});
+
+
+
 
 function openNav() {
   document.getElementById("mySidenav").classList.toggle("menu-toggle");

@@ -20,24 +20,23 @@
 
   </head>
   <body>
-
     <div class="loader"></div>
-
-    <nav class="navbar navbar-fixed-top">
+    <div id="contents">
+    <nav class="navbar navbar-fixed-top" >
       <span class="bm">&#60;BM&#62;</span>
       <span id="menu-button" style="font-size:25px; color:#748bb2; cursor:pointer" onclick="openNav()">&#9776;</span>
     </nav>
 
     <div id="mySidenav" class="sidenav">
       <div class="menu-div">
-        <a href="#" class="menu-items menu-top" id="house"><i class="icon fa fa-home fa-sm" ></i>
+        <a href="#home" class="menu-items menu-top" id="house"><i class="icon fa fa-home fa-sm" ></i>
         </a>
-        <a class="slidies" id="home">HOME</a>
+        <a class="slidies" href="#home">HOME</a>
       </div>
       <div class="menu-div">
-        <a href="#" class="menu-items menu-top" id="code"><i class=" icon fa fa-code" ></i>
+        <a href="#about-section" class="menu-items menu-top" id="code"><i class=" icon fa fa-code" ></i>
         </a>
-        <a class="slidies" id="skills">SKILLS</a>
+        <a href="#about-section" class="slidies" id="skills">SKILLS</a>
       </div>
       <div class="menu-div">
         <a href="#" class="menu-items menu-top" id="coffee"><i class="icon fa fa-coffee" ></i>
@@ -51,70 +50,112 @@
       <div class="connect" id="connect-id">
         <a id="chain" class="menu-items menu-bottom"><i class="icon fa fa-chain"></i></a>
         <div class="slidy-social" id="social">
-          <span class="social-buttons fb-button"><i class="icon-social fa fa-instagram"></i></span>
+          <span class="social-buttons insta-button"><i class="icon-social fa fa-instagram"></i></span>
           <a class="social-buttons li-button"><i class="icon-social fa fa-linkedin"></i></a>
           <a class="social-buttons gh-button"><i class="icon-social fa fa-github"></i></a>
 
         </div>
       </div>
     </div> 
-
-    <div class="intro">
+    <div class="intro" id="home">
       <header class="header">
         <h1 class="my-name">Brett Monzel</h1>
-        <div class="webdev">
-          <span>&#123;   Web Developer </span><span>| San Francisco &#125;  </span>
+        <div class="webdev text-center">
+          <span >&#123;   Software Developer </span><span>| San Francisco &#125;  </span>
         </div>
       </header>
       <div class="more" id="more">
-        <a class="aboutme trigger" id="about" href="#about-section">About me</a>
+        <a class="aboutme trigger" id="about-button" href="#about-section">More about me</a>
         <a class="arrow fa fa-arrow-down trigger" href="#about-section"></a>
       </div>
     </div>
-    <div id="about-section">
-      
+      <div class="row">
+        <div id="about-section"> 
+          <div class="basic-info">
+            <div class="fa fa-id-card-o id-card fa-4x col-md-2 col-xs-6 text-center"></div>
+            <div class="location info-box col-md-2 col-xs-6 text-center">
+              <p><strong class="br">WORK LOCATION</strong></p>
+              <p>Bay Area, remote</p>
+            </div>
+            <div class="phone info-box col-md-2 col-xs-6 text-center">
+              <p><strong class="br">PHONE NUMBER</strong></p>
+              <p>513-827-1560</p>
+            </div>
+            <div class="work-about info-box col-md-2 col-xs-6 text-center">
+              <p><strong class="br">WORK</strong></p>
+              <p>Web Development<br> Front-End/Full-stack</p>
+            </div>
+            <div class="email info-box col-md-2 col-xs-6 text-center">
+              <p><strong class="br">EMAIL ADDRESS</strong></p>
+              <p>monzelb@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="about-section2">
+          <div class="skills-info">
+            <p class="text-center skills-header">SKILLS</p>
+            <div class="fa fa-keyboard-o left-icons keyboard fa-4x col-md-2 col-xs-6 text-center"></div>
+            <div class=" skills skills-box col-md-2 col-xs-6 text-center">
+              <p>Object-oriented programming</p>
+              <p>Test-driven development</p>
+              <p>Agile methodology</p>
+            </div>
+            <div class=" skills skills-box col-md-2 col-xs-6 text-center">
+              <p>Relational databases</p>
+              <p>Third-party API's</p>
+              <p>RESTful web services</p>
+            </div>
+            <div class="skills skills-box col-md-2 col-xs-6 text-center">
+              <p>Responsive design</p>
+              <p>Cross-browser compatibility</p>
+              <p>Wireframing</p>
+            </div>
+            <div class="skills skills-box col-md-2 col-xs-6 text-center">
+              <p>Single-page apps</p>
+              <p>MVC Frameworks</p>
+              <p>HTTP</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="about-section3">
+          <div class="skills-info">
+            <p class="text-center skills-header">TECHNOLOGIES</p>
+            <p class="fa fa-code code-left left-icons fa-4x col-md-2 col-xs-6 text-center"></p>
+            <div class=" skills tech-box col-md-2 col-xs-6 text-center">
+              <p>Javascript</p>
+              <p>Ruby</p>
+              <p>Rails</p>
+            </div>
+            <div class=" skills tech-box col-md-2 col-xs-6 text-center">
+              <p>MongoDB</p>
+              <p>PostgresQL</p>
+              <p>Node.js</p>
+            </div>
+            <div class="skills tech-box col-md-2 col-xs-6 text-center">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>Angular.js</p>
+            </div>
+            <div class="skills tech-box col-md-2 col-xs-6 text-center">
+              <p>Git</p>
+              <p>Photoshop</p>
+              <p>Wordpress</p>
+            </div>
+          </div>
+          
+        </div>
+        <div id="skills-section">
+        </div>
+        <div id="contact-section">
+        </div>
+      </div>
+
+
+
+
+
+
     </div>
-
-
-    <div id="about-section">
-    <p>h</p> 
-    <p>h</p> 
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p><p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p><p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    <p>h</p>
-    </div>
-
   </body>
