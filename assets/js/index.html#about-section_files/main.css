@@ -6,9 +6,6 @@ body {
     letter-spacing:1px;
 }
 
-#contents{
-  display:none;
-}
 /*.under-intro{
   height:100vh;
   z-index:-1;
@@ -25,15 +22,15 @@ body {
 
 .header{
   position:absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
 .webdev {
   font-size:16px;
-/*  margin-left: 110px;
-*/}
+  margin-left: 110px;
+}
 
 .my-name{
   font-size: 80px;
@@ -60,16 +57,16 @@ body {
   text-decoration:none !important;
 }
 
-#about-button{
+#about{
   color:white;
   text-decoration:none;
 }
 
-#info-section{
+#about-section{
   margin-top: -55px;
   padding-top: 55px;
   background-color:#333333;
-  height:230px;
+  height:250px;
   color:white;
 }
 
@@ -86,14 +83,12 @@ body {
 
 .skills{
   margin-top:15px;
-  text-decoration:none;
-
 }
 
 .br{
   border-bottom: 2px solid #4f4f4f ;
   padding:5px;
-  letter-spacing: 1px;
+   letter-spacing: 1px;
 
 }
 
@@ -102,11 +97,11 @@ body {
 }
 
 .skills-box{
-  border-left: 2px solid rgba(79, 79, 79, .5) ;
+  border-left: 2px solid rgba(79, 79, 79, .3) ;
 }
 
 .tech-box{
-  border-left: 2px solid rgba(61,61,61, 0.8) ;
+  border-left: 2px solid rgba(61,61,61, 0.4) ;
 }
 
 .keyboard{
@@ -118,61 +113,21 @@ body {
 }
 
 .id-card{
-  color:#44a33c;
-
+  color:#44a33c
 }
 
-.left-icons{
-  margin-top:10px;
-}
-
-#info-section2{
-  height:235px;
+#about-section2{
+  height:225px;
   background-color:#3d3d3d;
   color:white;
 }
 
-#info-section3{
-  height:235px;
+#about-section3{
+  height:225px;
   background-color:#474747;
   color:white;
 }
 
-.about-section{
-  height:430px;
-  background-color: #eff0f4;
-  border-bottom: 2px solid rgba(175, 170, 180, .4);
-}
-
-.about-section2{
-  height:325px;
-  background-color: #eff0f4;
-}
-
-.about-header{
-  padding-top:40px;
-  font-size: 40px;
-}
-
-.about-header p span{
-    padding-bottom: 8px;
-    border-bottom:1px solid grey;
-}
-
-.img-me{
-  max-width:100%;
-  height:auto;
-  padding-top:40px;
-}
-
-.bio{
-  padding-top:40px;
-}
-
-.fa-user-circle{
-  color:#fc5e1e;
-  margin-top: 70px;
-}
 
 .sidenav {
   position:relative;
@@ -315,6 +270,7 @@ body {
 
 @media screen and (min-width: 750px) and (max-width: 1000px) {
   .my-name{font-size: 60px; }
+  .webdev{margin-left:55px;}
 }
 
 @media screen and (min-width: 495px) and (max-width: 749px) {
@@ -322,10 +278,12 @@ body {
   .webdev{margin-left: 0px;}
 }
 
-@media screen and (max-width: 554px) {
+@media screen and (max-width: 494px) {
   .my-name{font-size: 20px; margin-left:18px;}
   .webdev{margin-left: 0px; font-size:10px;}
 }
+
+
 
 @media screen and (max-height: 338px) {
   #connect-id{
@@ -334,14 +292,11 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  #info-section, #info-section2, #info-section3{
+  #about-section, #about-section2, #about-section3{
     height:300px;
   }
-  .id-card, .left-icons{
-    display:none;
-  }
   p{
-    font-size:11px;
+    font-size:12px;
   }
 }
 
