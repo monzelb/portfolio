@@ -9,6 +9,10 @@ $( document ).ready(function() {
     $(this).children(".slidies").animate({right: "0px"}, 20)
   })
 
+
+
+
+
   var timer;
   $(".connect").click(function(){
     // $(".slidy-social").css("visibility", "visible");
@@ -27,6 +31,15 @@ $( document ).ready(function() {
       $(this).children(".menu-items").css({"background-color": "white", "color": "#748bb2"});
     }
   })
+
+  $('.proj').hover(
+        function(){
+            $(this).find('.caption').fadeIn(250).css("display","inline-block"); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').fadeOut(250); //.fadeOut(205)
+        }
+    ); 
 
     $('a').on('click',function (e) {
       e.preventDefault();
@@ -73,7 +86,3 @@ $(window).on("load", function() {
     $(".loader").fadeOut("slow");
   })
 
-
-// function closeNav() {
-//     document.getElementById("mySidenav").style.width = "0";
-// }
