@@ -154,7 +154,7 @@ body {
 .bg-section{
 
   background-color: #eff0f4;
-  height:1650px;
+  height:1750px;
 }
 
 .bg-header{
@@ -255,15 +255,15 @@ body {
 }
 
 .portfolio-section {
+  
   background-color:#eff0f4;
-  height: 1370px;
+  height: 1250px;
   margin-top: -55px;
   padding-top: 55px;
 }
 
 .portfolio-header{
   margin-bottom:50px;
-  margin-top:50px;
 }
 
 .portfolio-container{
