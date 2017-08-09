@@ -41,7 +41,7 @@ $( document ).ready(function() {
         }
     ); 
 
-    $('a').on('click',function (e) {
+    $('.scroll').on('click',function (e) {
       e.preventDefault();
       console.log(this)
       console.log(this.hash)
