@@ -550,6 +550,9 @@ body {
   p{
     font-size:11px;
   }
+  .glyphicon-fast-forward{
+    display:none !important;
+  }
 }
 
 nav {
