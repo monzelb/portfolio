@@ -324,6 +324,7 @@ body {
 .contact-section{
   margin-top: -55px;
   padding-top: 55px;
+   padding-bottom:55px;
   /*height:340px;*/
   background-color: #eff0f4;
 }
