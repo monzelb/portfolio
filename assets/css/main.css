@@ -328,12 +328,20 @@ body {
   background-color: #eff0f4;
 }
 
+contact-header {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 .contact-sub{
   margin-left:20px;
 }
 
 .email-me{
   margin-top:60px;
+}
+.email-me div{
+  margin:0 auto;
 }
 
 .email-button{
