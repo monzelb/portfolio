@@ -328,7 +328,7 @@ body {
   background-color: #eff0f4;
 }
 
-contact-header {
+.contact-header {
     max-width: 700px;
     margin: 0 auto;
 }
@@ -339,6 +339,7 @@ contact-header {
 
 .email-me{
   margin-top:60px;
+    text-align:center;
 }
 .email-me div{
   margin:0 auto;
