@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+  openNav();
+
   $(".menu-div").mouseover(function(){
     $(this).children(".menu-items").css({"background-color": "#748bb2", "color": "white"});
     $(this).children(".slidies").animate({right: "120px"}, 25);
