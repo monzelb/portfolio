@@ -36,7 +36,7 @@ body {
 */}
 
 .my-name{
-  font-size: 80px;
+  font-size: 60px;
 }
 .more{
   display:none;
@@ -112,6 +112,7 @@ body {
 
 .tech-box{
   border-left: 2px solid rgba(61,61,61, 0.8) ;
+  background-color: #474747;
 }
 
 .keyboard{
@@ -271,7 +272,7 @@ body {
 }
 
 .portfolio-container{
-  padding-left:7.5% !important;
+  text-align: center;
   margin:0 auto;
   width:90%;
 }
@@ -504,7 +505,7 @@ body {
 
 @media screen and (max-height: 435px) {
   .sidenav a {font-size: 18px;}
-  .intro{color:#337ab7;}
+  .intro{color:grey;}
   .more{display:none;}
 }
 
@@ -513,12 +514,20 @@ body {
 }
 
 @media screen and (min-width: 495px) and (max-width: 749px) {
-  .my-name{font-size: 30px; margin-left:30px;}
+  .my-name{
+    font-size: 32px; 
+    margin-left:0 !important;
+    text-align: center;
+  }
   .webdev{margin-left: 0px;}
 }
 
 @media screen and (max-width: 554px) {
-  .my-name{font-size: 20px; margin-left:18px;}
+  .my-name{
+    font-size: 32px; 
+    margin-left:0 !important;
+    text-align: center;
+  }
   .webdev{margin-left: 0px; font-size:10px;}
   .img-div{display:none;}
 }

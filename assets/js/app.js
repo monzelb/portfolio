@@ -1,6 +1,18 @@
 $( document ).ready(function() {
 
-  openNav();
+  $(window).on('resize', function(event){
+    var windowSize = $(window).width(); // Could've done $(this).width()
+      if(windowSize < 600){
+        $("#mySidenav").hide();
+      }
+      else{
+        $("#mySidenav").show();
+      }
+  });
+
+  setTimeout(function(){
+    openNav();
+  }, 1000)
 
   $(".menu-div").mouseover(function(){
     $(this).children(".menu-items").css({"background-color": "#748bb2", "color": "white"});
@@ -16,7 +28,7 @@ $( document ).ready(function() {
 
 
   var timer;
-  $(".connect").click(function(){
+  $(".connect, #coffee").click(function(){
     // $(".slidy-social").css("visibility", "visible");
     if($(".slidy-social").css("right") === "0px"){
       $(this).children(".menu-items").css({"background-color": "#748bb2", "color": "white"});
