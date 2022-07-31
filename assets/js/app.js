@@ -32,7 +32,7 @@ $( document ).ready(function() {
     // $(".slidy-social").css("visibility", "visible");
     if($(".slidy-social").css("right") === "0px"){
       $(this).children(".menu-items").css({"background-color": "#748bb2", "color": "white"});
-      $(".slidy-social").animate({right: "200px"}, 250);
+      $(".slidy-social").animate({right: "140px"}, 250);
       timer = setTimeout(function(){
         if($(".slidy-social").css("right") !== "0px"){
           $(".slidy-social").animate({right: "0px"}, 250)
@@ -53,7 +53,7 @@ $( document ).ready(function() {
         function(){
             $(this).find('.caption').fadeOut(250); //.fadeOut(205)
         }
-    ); 
+    );
 
     $('.scroll').on('click',function (e) {
       e.preventDefault();
