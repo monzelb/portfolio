@@ -1,7 +1,7 @@
 body {
     font-family: "Lato", sans-serif;
     z-index:0;
-    height: 100%
+    height: 100%;
     width: 100%;
     letter-spacing:1px;
 }
@@ -14,10 +14,11 @@ body {
   z-index:-1;
 }*/
 .intro{
-  position:relative;
-  height:100vh;
+  position: relative;
+  height: 100vh;
+  max-height: 100vw;
   background-image: url("../images/gg-bridge.jpg");
-  background-position: bottom;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
   transition:0.3s;
@@ -54,8 +55,8 @@ body {
 .arrow{
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0); 
-  color:white !important; 
+  transform: translate(-50%, 0);
+  color:white !important;
   text-decoration:none !important;
 
 }
@@ -113,6 +114,7 @@ body {
 .tech-box{
   border-left: 2px solid rgba(61,61,61, 0.8) ;
   background-color: #474747;
+  padding-bottom: 30px;
 }
 
 .keyboard{
@@ -148,14 +150,14 @@ body {
   margin-top: -55px;
   padding-top: 55px;
   height:430px;
-  background-color: #eff0f4;
+  /* background-color: #eff0f4; */
 /*  border-bottom: 2px solid rgba(175, 170, 180, .4);
 */}
 
 .bg-section{
 
-  background-color: #eff0f4;
-  height:1750px;
+  /* background-color: #eff0f4; */
+  /* height:1750px; */
 }
 
 .bg-header{
@@ -193,7 +195,6 @@ body {
   padding-bottom:40px;
   margin-left:20px;
   margin-bottom:40px;
-  border-bottom: 2px solid #a6bbdd;
 }
 
 #buddha{
@@ -260,20 +261,21 @@ body {
 }
 
 .portfolio-section {
-  
-  background-color:#eff0f4;
-  height: 1250px;
+
+  /* background-color:#eff0f4; */
+  /* height: 1250px; */
   margin-top: -55px;
   padding-top: 55px;
 }
 
-.portfolio-header{
-  margin-bottom:50px;
+.portfolio-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.portfolio-container{
+.well.portfolio-container{
   text-align: center;
-  margin:0 auto;
+  margin: 0 auto 60px;
   width:90%;
 }
 
@@ -316,7 +318,7 @@ body {
   padding:20px;
 }
 
-.caption-text{
+.caption-text {
   position:relative;
   top: 50%;
   transform: translateY(-50%);
@@ -326,7 +328,8 @@ body {
   -o-transform: translateY(-50%);
   }
 
-.contact-section{
+.contact-section {
+  clear: both;
   margin-top: -55px;
   padding-top: 55px;
    padding-bottom:55px;
@@ -340,11 +343,11 @@ body {
     text-align:center;
 }
 
-.contact-sub{
+.contact-sub {
   margin-left:20px;
 }
 
-.email-me{
+.email-me {
   margin-top:60px;
     text-align:center;
 }
@@ -355,7 +358,7 @@ body {
 .email-button{
   padding: 20px;
   border: 1px solid gray;
-  width:90%; 
+  width:90%;
   margin:0 auto;
   font-size:20px;
   text-decoration: none !important;
@@ -473,6 +476,7 @@ body {
 .connect{
   bottom:0;
   position:absolute;
+  cursor: pointer;
 }
 
 .menu-bottom{
@@ -515,7 +519,7 @@ body {
 
 @media screen and (min-width: 495px) and (max-width: 749px) {
   .my-name{
-    font-size: 32px; 
+    font-size: 32px;
     margin-left:0 !important;
     text-align: center;
   }
@@ -524,11 +528,11 @@ body {
 
 @media screen and (max-width: 554px) {
   .my-name{
-    font-size: 32px; 
+    font-size: 32px;
     margin-left:0 !important;
     text-align: center;
   }
-  .webdev{margin-left: 0px; font-size:10px;}
+  .webdev{margin-left: 0px; font-size:12px;}
   .img-div{display:none;}
 }
 
@@ -574,8 +578,8 @@ body {
   .id-card, .left-icons{
     display:none;
   }
-  p{
-    font-size:11px;
+  p {
+    font-size:12px;
   }
   .glyphicon-fast-forward{
     display:none !important;
@@ -591,7 +595,7 @@ box-shadow: 0 1px 1px rgba(175, 170, 180, 0.2);
 
 #menu-button {
   float:right;
-  margin-right:100px;
+  margin-right:22px;
   margin-top: 8px;
 }
 
